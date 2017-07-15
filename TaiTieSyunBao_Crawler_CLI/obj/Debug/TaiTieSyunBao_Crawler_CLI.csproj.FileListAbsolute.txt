@@ -1,0 +1,11 @@
+c:\users\jack-pc\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\TaiTieSyunBao_Crawler_CLI.exe.config
+c:\users\jack-pc\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\TaiTieSyunBao_Crawler_CLI.exe
+c:\users\jack-pc\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\TaiTieSyunBao_Crawler_CLI.pdb
+c:\users\jack-pc\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\obj\Debug\TaiTieSyunBao_Crawler_CLI.csprojResolveAssemblyReference.cache
+c:\users\jack-pc\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\obj\Debug\TaiTieSyunBao_Crawler_CLI.exe
+c:\users\jack-pc\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\obj\Debug\TaiTieSyunBao_Crawler_CLI.pdb
+C:\Users\Jack-PC\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Jack-PC\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jack-PC\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Jack-PC\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Jack-PC\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\HtmlAgilityPack.xml
