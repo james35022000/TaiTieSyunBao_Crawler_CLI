@@ -9,3 +9,13 @@ C:\Users\Jack-PC\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI
 C:\Users\Jack-PC\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\HtmlAgilityPack.dll
 C:\Users\Jack-PC\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\HtmlAgilityPack.pdb
 C:\Users\Jack-PC\documents\visual studio 2015\Projects\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Jack-PC\Documents\GitHub\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\TaiTieSyunBao_Crawler_CLI.exe.config
+C:\Users\Jack-PC\Documents\GitHub\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\obj\Debug\TaiTieSyunBao_Crawler_CLI.exe
+C:\Users\Jack-PC\Documents\GitHub\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\obj\Debug\TaiTieSyunBao_Crawler_CLI.pdb
+C:\Users\Jack-PC\Documents\GitHub\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\TaiTieSyunBao_Crawler_CLI.exe
+C:\Users\Jack-PC\Documents\GitHub\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\TaiTieSyunBao_Crawler_CLI.pdb
+C:\Users\Jack-PC\Documents\GitHub\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\HtmlAgilityPack.dll
+C:\Users\Jack-PC\Documents\GitHub\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\HtmlAgilityPack.pdb
+C:\Users\Jack-PC\Documents\GitHub\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\HtmlAgilityPack.xml
+C:\Users\Jack-PC\Documents\GitHub\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Jack-PC\Documents\GitHub\TaiTieSyunBao_Crawler_CLI\TaiTieSyunBao_Crawler_CLI\obj\Debug\TaiTieSyunBao_Crawler_CLI.csprojResolveAssemblyReference.cache

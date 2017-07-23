@@ -45,7 +45,7 @@ namespace TaiTieSyunBao_Crawler_CLI
             public string Longitude;
         }
 
-        static string[] API_KEY = new string[10] { "AIzaSyCvCAxqYjNap7Q15t_5jwOp8kLD4qOjjjs",
+        static string[] API_KEY = new string[24] { "AIzaSyCvCAxqYjNap7Q15t_5jwOp8kLD4qOjjjs",
                                                     "AIzaSyC1RVX8yMuP9C3RaqqYSYZ6Q-LMN4VUGXY",
                                                     "AIzaSyDxoiJtA0ZFa4JuwkVliK4oWvcxJOneqvs",
                                                     "AIzaSyBItCdRGnSiGHQSutLu9itR23dP-y3z9sA",
@@ -54,7 +54,22 @@ namespace TaiTieSyunBao_Crawler_CLI
                                                     "AIzaSyCgVePBVrGeN99AB9g-WD4wHGbP7j7aAT4",
                                                     "AIzaSyBYRw18PEe9byyBVQZfiMfIpDQjfpT-XT8",
                                                     "AIzaSyBNSYUntnESPXSi6PvM85cBoBRJ8NkzjMg",
-                                                    "AIzaSyD_x4JTOAooIv9S2HuGpiZby8I9cB6Vhgw" };
+                                                    "AIzaSyD_x4JTOAooIv9S2HuGpiZby8I9cB6Vhgw",
+                                                    "AIzaSyBH2Pzf_wr96oWhAq1koXMtb1QZ2JycmYk",
+                                                    "AIzaSyBfXYSmTfI7G9uE8y0E0DqHzMZ-6Vl9d48",
+                                                    "AIzaSyA0dYMwgkh-cOSUcHeSTFC7XP-IuxZfz4k",
+                                                    "AIzaSyDBo6D5B8dfSPuKJVtqSR7voCf5MRKvRdY",
+                                                    "AIzaSyCCEwwWd12Ap0tWsZIrCvH_pUO3u_f6q2Y",
+                                                    "AIzaSyAo_0T3OmPbFz32iVOifcbq2Bk6MszyefU",
+                                                    "AIzaSyB-_Pvz6pkMctfSFCb_5xyO5gmiuWP13L4",
+                                                    "AIzaSyCy286VhITZrmIq-GX5bd_L4FIh9JcQ684",
+                                                    "AIzaSyA1WoP1rRSBj7WLojRcBDwerXkqw2l21rw",
+                                                    "AIzaSyCrS0qjp4VYSR18NAgdrPrbne4YvcveF7M",
+                                                    "AIzaSyDg1feNFKz9wQbrcguaW7b2YCcQ_HEvYZM",
+                                                    "AIzaSyBCBA1IseVkR-rpXyS_Sc2aHjiI0iY2Olk",
+                                                    "AIzaSyDDpt7JqKZSShq-mkx8RJ_emBk4HIazhpo",
+                                                    "AIzaSyCCqYJCxxGSxmu6KwMlvOSGhxJ3DCHJfjI"};
+
         static string Place_Url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?";
         static string Geocoding_URL = "https://maps.googleapis.com/maps/api/geocode/json?";
         static string Firebase_URL = "https://taitiesyunbao-d1296.firebaseio.com/";
@@ -66,13 +81,17 @@ namespace TaiTieSyunBao_Crawler_CLI
         static void Main(string[] args)
         {
 
-            using (var client = new WebClient())
+            /*using (var client = new WebClient())
             {
                 client.Encoding = Encoding.UTF8;
+                client.Headers[HttpRequestHeader.UserAgent] = "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.2 (KHTML, like Gecko) Chrome/15.0.874.121 Safari/535.2";
                 string html, jsonData;
-                html = client.DownloadString("https://www.google.com/maps/search/?api=1&query=24.806657,120.975865&query_place_id=ChIJ-0zpVcM1aDQRVXWOZhBAxcw&hl=zh-TW");
+                html = client.DownloadString("https://www.google.com/maps/place/%E5%B0%9A%E9%87%8E%E9%90%B5%E6%9D%BF%E7%87%92/@24.6983017,121.7687086,17z/data=!4m5!3m4!1s0x3467e5cb9754e03f:0x1ed5780d41ffdc12!8m2!3d24.6983017!4d121.7687086?hl=zh-Hant");
                 int index = html.IndexOf("cacheResponse", html.IndexOf("cacheResponse") + 1);
-                jsonData = "{\"j\":" + html.Substring(index + 14, html.IndexOf(";", index) - index - 15) + "}";
+                jsonData = "{\"j\":" + html.Substring(index + 14, html.IndexOf("]);", index) - index - 13) + "}";
+                //html = client.DownloadString("https://www.google.com/maps/uv?pb=!1s0x3467e5b508667ee3%3A0x8d8393c944e4556e&hl=zh-Hant");
+                //int index = html.IndexOf("window.APP_OPTIONS=") + 19;
+                //jsonData = "{\"j\":" + html.Substring(index, html.IndexOf(";window.JS_VERSION=") - index) + "}";
                 HtmlDocument document = new HtmlDocument();
                 document.LoadHtml(html);
                 HtmlNodeCollection nodes = document.DocumentNode.SelectNodes("/html[1]/body[1]/jsl[1]/div[3]/div[8]/div[8]/div[1]/div[2]/div[1]/div[1]/div[1]/button[1]");
@@ -80,7 +99,7 @@ namespace TaiTieSyunBao_Crawler_CLI
                 {
                     Console.WriteLine(node.InnerText);
                 }
-            }
+            }*/
 
             /* Get stations' infomation */
             string[] stations = File.ReadAllLines(@"C:\Users\Jack-PC\Desktop\Railway.txt");
@@ -93,25 +112,7 @@ namespace TaiTieSyunBao_Crawler_CLI
                 client.Headers.Add("content-type", "application/json");
                 stations_data = client.DownloadString(Firebase_URL + "Stations" + "/.json");
             }
-
-            /*foreach (string s in stations)
-            {
-                string[] lines = System.IO.File.ReadAllLines(@"C:\Users\Jack-PC\Desktop\place.txt");
-                using (System.IO.StreamWriter file = File.AppendText(@"C:\Users\Jack-PC\Desktop\place.txt"))
-                {
-                    bool b = true;
-                    foreach (string line in lines)
-                    {
-                        if (line.Equals(s))
-                        {
-                            b = false;
-                        }
-                    }
-                    if (b)
-                        file.WriteLine(s);
-                }
-            }*/
-
+           
             foreach (string s in stations)
             {
                 if (s[0].Equals('['))
@@ -148,7 +149,7 @@ namespace TaiTieSyunBao_Crawler_CLI
 
 
             /* Get stores near stations */
-            using (var client = new WebClient())
+            /*using (var client = new WebClient())
             {
                 client.Encoding = Encoding.UTF8;
                 client.Headers.Add("content-type", "application/json");
@@ -277,8 +278,57 @@ namespace TaiTieSyunBao_Crawler_CLI
                     }
                 }
                 
+            }*/
+            using (var client = new WebClient())
+            {
+                client.Encoding = Encoding.UTF8;
+                client.Headers.Add("content-type", "application/json");
+                string response = safeHttpRequest(client, Firebase_URL + "Stores/.json");
+                try
+                {
+                    Dictionary<string, object> values = JsonConvert.DeserializeObject<Dictionary<string, object>>(response);
+                    foreach(var value in values)
+                    {
+                        if (!value.Key.ToString().Equals("Stations"))
+                        {
+                            string Lat = "", Lng = "";
+                            Dictionary<string, object> info = JsonConvert.DeserializeObject<Dictionary<string, object>>(value.Value.ToString());
+                            foreach (var i in info)
+                            {
+                                if (i.Key.ToString().Equals("Latitude"))
+                                {
+                                    Lat = i.Value.ToString();
+                                }
+                                else if (i.Key.ToString().Equals("Longitude"))
+                                {
+                                    Lng = i.Value.ToString();
+                                }
+                            }
+                            response = safeHttpRequest(client, Geocoding_URL + "latlng=" + Lat + "," + Lng + "&language=en&key=" + API_KEY[API_COUNT]);
+                            while (JObject.Parse(response)["status"].ToString().Equals("OVER_QUERY_LIMIT"))
+                            {
+                                API_COUNT++;
+                                if (API_COUNT == 24)
+                                {
+                                    Console.WriteLine("NO API KEY!!");
+                                    Console.Read();
+                                }
+                                response = safeHttpRequest(client, Geocoding_URL + "latlng=" + Lat + "," + Lng + "&language=en&key=" + API_KEY[API_COUNT]);
+                            }
+                            JObject r = JObject.Parse(response);
+                            JArray address = JArray.Parse(r["results"].ToString());
+                            client.UploadString(Firebase_URL + "Stores/" + value.Key.ToString() + "/Address_en/.json", "PUT", "\"" + address[0]["formatted_address"].ToString() + "\"");
+
+                        }
+                    }
+                }
+                catch
+                {
+
+                }
             }
-            
+
+
                 Console.ReadLine();
         }
 
